@@ -1,0 +1,122 @@
+{
+  "project_title": "Sistem Prediksi Kuat Tekan Beton Berdasarkan Komposisi Campuran dan Umur Menggunakan Multiple Linear Regression dan Random Forest Regression",
+  "dataset": {
+    "name": "Concrete Compressive Strength",
+    "source": "UCI Machine Learning Repository",
+    "doi": "10.24432/C5PK67",
+    "records_after_cleaning": 1005,
+    "missing_values": 0
+  },
+  "selected_model": "Random Forest Regression",
+  "selection_metric": "RMSE validation terendah",
+  "features": [
+    "Cement",
+    "Blast Furnace Slag",
+    "Fly Ash",
+    "Water",
+    "Superplasticizer",
+    "Coarse Aggregate",
+    "Fine Aggregate",
+    "Age"
+  ],
+  "target": "Concrete compressive strength",
+  "split": {
+    "train": 703,
+    "validation": 151,
+    "test": 151,
+    "random_state": 42
+  },
+  "validation_metrics": {
+    "Multiple Linear Regression": {
+      "MAE (MPa)": 8.12660733353243,
+      "RMSE (MPa)": 10.3038617258604,
+      "R2": 0.5795914908108709
+    },
+    "Random Forest Regression": {
+      "MAE (MPa)": 3.256217897613795,
+      "RMSE (MPa)": 4.7535209450391465,
+      "R2": 0.9105248824916214
+    }
+  },
+  "test_metrics_selected_model": {
+    "MAE (MPa)": 3.3907555760538224,
+    "RMSE (MPa)": 4.734288935763395,
+    "R2": 0.9182692473175442
+  },
+  "feature_ranges": {
+    "Cement": {
+      "min": 102.0,
+      "max": 540.0,
+      "median": 265.0
+    },
+    "Blast Furnace Slag": {
+      "min": 0.0,
+      "max": 359.4,
+      "median": 20.0
+    },
+    "Fly Ash": {
+      "min": 0.0,
+      "max": 200.1,
+      "median": 0.0
+    },
+    "Water": {
+      "min": 121.8,
+      "max": 247.0,
+      "median": 185.7
+    },
+    "Superplasticizer": {
+      "min": 0.0,
+      "max": 32.2,
+      "median": 6.1
+    },
+    "Coarse Aggregate": {
+      "min": 801.0,
+      "max": 1145.0,
+      "median": 968.0
+    },
+    "Fine Aggregate": {
+      "min": 594.0,
+      "max": 992.6,
+      "median": 780.0
+    },
+    "Age": {
+      "min": 1.0,
+      "max": 365.0,
+      "median": 28.0
+    }
+  },
+  "feature_importance": [
+    {
+      "Feature": "Age",
+      "Importance": 0.3545202215688918
+    },
+    {
+      "Feature": "Cement",
+      "Importance": 0.30670900307817506
+    },
+    {
+      "Feature": "Water",
+      "Importance": 0.1011585163516648
+    },
+    {
+      "Feature": "Blast Furnace Slag",
+      "Importance": 0.07573960317522702
+    },
+    {
+      "Feature": "Superplasticizer",
+      "Importance": 0.07276892145868583
+    },
+    {
+      "Feature": "Fine Aggregate",
+      "Importance": 0.042701935286165914
+    },
+    {
+      "Feature": "Coarse Aggregate",
+      "Importance": 0.02851870464420757
+    },
+    {
+      "Feature": "Fly Ash",
+      "Importance": 0.017883094436982012
+    }
+  ]
+}
