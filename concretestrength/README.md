@@ -86,7 +86,7 @@ Notebook mengambil dataset resmi UCI secara langsung sehingga file CSV tidak per
 
 ## Batasan
 
-Model merupakan alat estimasi berbasis data historis. Keluaran tidak menggantikan pengujian laboratorium, penilaian ahli struktur, ataupun standar mutu beton yang berlaku.
+Model menghasilkan estimasi awal kuat tekan beton berdasarkan delapan variabel pada dataset eksperimen UCI. Penggunaan model dibatasi pada rentang nilai yang terdapat dalam dataset. Faktor di luar dataset, seperti karakteristik bahan dan proses perawatan beton, belum diperhitungkan. Hasil prediksi tidak dapat digunakan sebagai penetapan mutu beton tanpa pengujian tekan di laboratorium.
 
 ## Sitasi Dataset
 
